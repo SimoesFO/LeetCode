@@ -10,8 +10,6 @@ class LinkNode<T> {
   }
 }
 
-
-
 class LinkedList<T> {
   head: LinkNode<T> | undefined
   tail: LinkNode<T> | undefined
@@ -140,20 +138,19 @@ class LinkedList<T> {
   }
 }
 
+{
 const list = new LinkedList()
 list.addHead(5)
 list.addHead(6)
 list.addTail(9)
 list.addAt(1, 1)
-list.print()
-console.log()
 // list.removeHead()
 // list.removeHead()
 // list.removeTail()
-// list.removeAt(2)
-// list.print()
+list.removeAt(2)
+list.print()
 // list.removeList()
 // list.print()
 // console.log(list)
-
-console.log(list.indexOf(10))
+// console.log(list.indexOf(10))
+}
